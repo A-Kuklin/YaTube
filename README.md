@@ -27,7 +27,7 @@ Python, Django, Git, Bootstrap, SQLite
 Создаем виртуальное окружение:<br>
  ```$ python -m venv venv```
 
-Запускаем виртуальное окружение:<br>
+Запускаем виртуальное окружение<br>
 
 Устанавливаем зависимости:<br>
 ```$ pip install -r requirements.txt```
