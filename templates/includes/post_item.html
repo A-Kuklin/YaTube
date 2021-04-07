@@ -1,0 +1,58 @@
+<div class="card mb-3 mt-1 shadow-sm">
+
+  <!-- Отображение картинки -->
+
+  {% load thumbnail %}
+    {% if view %}
+      {% thumbnail post.image "1100" crop="center" upscale=True as im %}
+  <img class="card-img" src="{{ im.url }}" />
+      {% endthumbnail %}
+    {% endif %}
+
+      {% if index %}
+      {% thumbnail post.image "1200x270" crop="center" upscale=True as im %}
+  <a href="{% url 'post' post.author.username post.id %}"><img class="card-img"  src="{{ im.url }}" /></a>
+      {% endthumbnail %}
+    {% endif %}
+
+  <!-- Отображение текста поста -->
+  <div class="card-body">
+    <p class="card-text">
+      <!-- Ссылка на автора через @ -->
+      <a name="post_{{ post.id }}" href="{% url 'profile' post.author.username %}">
+        <strong class="d-block text-dark">@{{ post.author }}</strong>
+      </a>
+      {{ post.text|linebreaksbr }}
+    </p>
+
+    <!-- Если пост относится к какому-нибудь сообществу, то отобразим ссылку на него через # -->
+    {% if post.group %}
+    <a class="card-link muted" href="{% url 'group' post.group.slug %}">
+      <strong class="d-block text-dark">#{{ post.group.title }}</strong>
+    </a>
+    {% endif %}
+
+    <!-- Отображение ссылки на комментарии -->
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="btn-group btn-group-toggle">
+        {% if post.comments.exists %}
+        <a class="btn btn-sm btn-secondary" href="{% url 'post' post.author.username post.id %}" role="button">
+          Комментариев: {{ post.comments.count }}
+        {% endif %}
+        <a class="btn btn-sm btn-secondary" href="{% url 'add_comment' post.author.username post.id %}" role="button">
+          Добавить комментарий
+        </a>
+
+        <!-- Ссылка на редактирование поста для автора -->
+        {% if user == post.author %}
+        <a class="btn btn-sm btn-warning" href="{% url 'post_edit' post.author.username post.id %}" role="button">
+          Редактировать
+        </a>
+        {% endif %}
+      </div>
+
+      <!-- Дата публикации поста -->
+      <small class="text-muted">{{ post.pub_date }}</small>
+    </div>
+  </div>
+</div>
