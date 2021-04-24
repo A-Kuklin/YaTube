@@ -3,7 +3,7 @@
 <br><br>
 
 Пример развёрнут на [pythonanywhere](http://kuklin.pythonanywhere.com/ "http://kuklin.pythonanywhere.com/")<br>
-<a href="http://kuklin.pythonanywhere.com/"><img src="https://lh3.googleusercontent.com/x97A5Yh8X-KNHbmX7HMHB9PptxWA1UJ4e-66YQnXsG30cNwCNn2URklW1F-IWNAARE4RchJ6LcTsZqDPIZJkpdIIqxn-tmLA2ZYG0kZA09KD9rgMAJk7JaeeQk21QG6QStCTyvdrlEKLIcegfhwGNNpoXVN8x8CxhhaSkOodNLH6Zllk0eBm3PE8eHZzV62Gw0SlI8YJJaH_S8s25lqySXDNfdEMJtPCvWMrj64at7vmpfmPOn7IDqwlW4ui_T4LZXr9MN9DLq7zsvBOOTYmV-ITH28NBWoEAkhFhvJap1H7nYoOv79GHc-4NxKYWqYrodFG9JZxNUtahse55_2OLHRvik7B76xmDe7svuZuEqejx6Ax9IDuhWWO7_4MklVayKFpIjH8bX0Ce7M85_fb0IW5weF8DZLGP3sijEsCMeiGZU2-_hlVzFwZZKH_kClEW79P72rYzxWVwnDteMrY3aWMR9EzhrzTrXIS9v0J4XowGGhQttsNMoTKfN_9eEtTJPUFG9Vi0q6I7aFAfRf7R3Q6teKx4qfkDsHDYjt8cPKe6AJo7P6PCYA8UVUYEpoHNlMVZLNTk11CWtoObHjLFV0RkD0xxw6dZeKEErfhGRdQq4exsZjPEj_lamoGWFN2VnxVDoBY9RppmltozKDAQBFMDctgkSTbPGOnfW3pMeMb2L8fwjtmF7dDKXRCknbYJABV3392_GoDvREK7XDK9mPg=w770-h506-no?authuser=0?.jpg" width="500" ></a>
+<a href="http://kuklin.pythonanywhere.com/"><img src="https://lh3.googleusercontent.com/6m3tGE89nnedkMppz7OZknOAYlSIF3uPE4sqyEXm2Piwyo5qc15PiHD2dYdrjpIrFs_d_qDmIPnicjGQVRWwbatV8FYwLfE_SZJ4bmcUjmcxsWRYPxSDkvNt75vxrI-FseZMrTPdn5uoR3sjoSiHPuUMVOd-Bcep4KNFsI1AgZ9LIqTGeVkYqOh3XF09bhc2Hvs_skQOyLnpdCREUaCevHLOB7h2ReGLIMLOBShC796cG7_04m6kGVYcUHmeUObaKWnhUIiQirf72Blpov3SbrC1x7RmLk6OME2-Ahw5Qnz0UEkmUYuc3rUZeirO-pgxuXnVOZt2RzZ5JcvG1CwHD1aUZwVa8GO0UzUX9PKGm3FCmDwVY6-wzqLI-GQhfzG39t4Cp9yMlXHqbU5un_lBhs2oy4B4CU4EobmFxdiYme3mWEFGeeVblNbTDQ9vdfBUejPAnNAhyQnVfpD04cFklhADCmA4Jfuh1_NomelRQ80wpP9y1R5bDF4VW4qBTCUdhuOR5LfQchvzIyNbwpP8ipFaZHzD0s6EWi0y4aXNFeHfx0IXOKuHI1Zum35XdcvJ-_AlsNPIc6bGPzoHQvNNOu2I97b8KLxiyEm3qGSyR3uVxq5ULAxb0PQRzcpWXN7pIBLcX5rKCjO0cyXTvlrO1_gTR94h08VZ8QcshTLP6eNQJf2YSW0K2j236JP1esursgk92HpTnW_20Ykxg0JbMI_V=w770-h506-no?authuser=0?.jpg" width="500" ></a>
 <br>
 
 Проект блога: 
@@ -27,7 +27,7 @@ Python, Django, Git, Bootstrap, SQLite
 Создаем виртуальное окружение:<br>
  ```$ python -m venv venv```
 
-Запускаем виртуальное окружение:<br>
+Запускаем виртуальное окружение<br>
 
 Устанавливаем зависимости:<br>
 ```$ pip install -r requirements.txt```
